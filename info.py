@@ -17,7 +17,7 @@ API_HASH = 'edefebe693e029e6aca6c7c1df2745ec'
 BOT_TOKEN = '6338200745:AAGEtPZE1TzjLVXQSLkWKivs1dvTFFYihlI'
 
 # Bot settings
-CACHE_TIME = int(environ.get('CACHE_TIME', 300))
+CACHE_TIME = int(environ.get('CACHE_TIME', '300'))
 USE_CAPTION_FILTER = bool(environ.get('USE_CAPTION_FILTER', False))
 PICS = (environ.get('PICS', 'https://graph.org/file/ae2d39ecfc160f5868d50.jpg https://graph.org/file/7c01cba54ecda5de5f739.jpg https://graph.org/file/fb1e5da876b4266e15133.jpg https://graph.org/file/68c59fa079dfe21450474.jpg https://graph.org/file/c2a58e65c85dc1de9f1a2.jpg https://graph.org/file/8538157326dcf5c756847.jpg')).split()
 # Admins, Channels & Users
@@ -36,7 +36,7 @@ DATABASE_NAME = environ.get('DATABASE_NAME', "nandan22")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 
 # Others
-LOG_CHANNEL = int(environ.get('LOG_CHANNEL', -1001802445568))
+LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1001802445568'))
 SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'TeamEvamaria')
 P_TTI_SHOW_OFF = is_enabled((environ.get('P_TTI_SHOW_OFF', "False")), False)
 IMDB = is_enabled((environ.get('IMDB', "True")), True)
