@@ -21,8 +21,8 @@ CACHE_TIME = int(environ.get('CACHE_TIME', 300))
 USE_CAPTION_FILTER = bool(environ.get('USE_CAPTION_FILTER', False))
 PICS = (environ.get('PICS', 'https://graph.org/file/ae2d39ecfc160f5868d50.jpg https://graph.org/file/7c01cba54ecda5de5f739.jpg https://graph.org/file/fb1e5da876b4266e15133.jpg https://graph.org/file/68c59fa079dfe21450474.jpg https://graph.org/file/c2a58e65c85dc1de9f1a2.jpg https://graph.org/file/8538157326dcf5c756847.jpg')).split()
 # Admins, Channels & Users
-ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '1908235162 1404622369').split()]
-CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1001928455890 -1001760573517').split()]
+ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '1404622369').split()]
+CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1001760573517').split()]
 auth_users = [int(user) if id_pattern.search(user) else user for user in environ.get('AUTH_USERS', '1908235162').split()]
 AUTH_USERS = (auth_users + ADMINS) if auth_users else []
 auth_channel = '-1001859436119'
